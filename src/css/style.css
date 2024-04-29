@@ -1,0 +1,1231 @@
+  body {
+      margin-bottom: 0;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* cor rosa claro */
+      overflow-x: hidden; 
+    }
+
+    
+
+    /*pagina1*/
+
+
+
+    .copyright{
+
+      text-align: center;
+
+      }
+      
+      .copyright p{
+        color:rgb(110, 110, 110);
+        font-size: 13px;
+        font-weight: 100;
+        position: absolute; /* Posicione absolutamente em relação à div pai */
+        bottom: 0; /* Alinhe a div filho no fundo da div pai */
+        left: 0; /* Alinhe a div filho no canto esquerdo da div pai */
+        width: 100%; /* Defina a largura para ocupar toda a largura da div pai */ 
+
+      }
+
+
+
+    .informacoes {
+  background-color: #faddbd;
+  height: 200px; /* altura de até 100px */
+  margin: 0px auto 0; /* remover a margem branca e adicionar margem superior e inferior */
+  display: flex; /* usar flexbox */
+  align-items: center; /* centralizar verticalmente */
+  justify-content: center; /* centralizar horizontalmente */
+  position: relative; /* Adicione posição relativa para que possamos posicionar a div filho absolutamente */
+  }
+
+
+
+  .informacoes img {
+
+  max-width: 200px; /* tamanho de até 80px para a imagem */
+  display: block; /* centralizar a imagem */
+  margin: 0 auto; /* centralizar a imagem */
+  }
+
+    .titulo-depoimentos{
+      font-weight: bolder;
+      font-size: 30px;
+      color: rgb(65, 65, 145);
+      text-align: center;
+    }
+    
+
+    .quadrado-servico p{
+      font-weight: bolder;
+      font-size: 14px;
+      color:rgb(33, 33, 88);
+
+    }  
+
+
+    
+    .quadrado-servico p1{
+      color: #313131;
+      text-align: left;
+      font-size: 15px;
+    }
+
+
+      .topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 120px;
+    display: flex; /* Adicionado */
+    justify-content: center; /* Centralize os itens horizontalmente */
+    align-items: center; /* Adicionado */
+    padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */  
+
+
+    }
+
+
+
+
+
+    /* Outras regras de estilo existentes */
+
+    .topnav p {
+      margin-right: 30px; /* Altere o valor conforme necessário para ajustar o espaçamento */
+      display: none; /* Oculta os parágrafos por padrão */
+      font-size: 14px;
+
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+  
+
+  .link-sem-decoracao a {
+    text-decoration: none; /* Remover sublinhado */
+    color: inherit; /* Herdar a cor do texto do elemento pai */
+    color: #5a5a5a;
+  } 
+
+  .link-sem-decoracao1 a {
+    text-decoration: none; /* Remover sublinhado */
+    color: inherit; /* Herdar a cor do texto do elemento pai */
+    color: #5a5a5a;
+    margin-left: 10px;
+  } 
+
+
+
+
+    .topnav img {
+      max-width: 200px; /* reduzindo o tamanho da imagem */
+      float: left; /* alinhando à esquerda */
+      margin-left: 15px;
+    }
+
+
+    .capa {
+  position: relative;
+  display: flex; /* Adicionado */
+  flex-direction: column; /* Adicionado */
+  justify-content: center; /* Adicionado */
+  align-items: center; /* Adicionado */
+  text-align: center;
+  margin: 0;
+  }
+
+  .imagem {
+  width: 100vw; /* Defina a largura igual à largura da viewport */
+  height: auto; /* Mantenha a proporção da imagem */
+  margin-left: auto; /* Alinhe à esquerda */
+  margin-right: auto; /* Alinhe à direita */
+  }
+
+  .texto-principal {
+  position: absolute; /* posicionar absolutamente dentro da .capa */
+  bottom: 30px; /* ajustar a distância do fundo */
+  left: 50%; /* centralizar horizontalmente */
+  transform: translateX(-50%); /* centralizar horizontalmente */
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco transparente */
+  padding: 20px;
+  border-radius: 10px;
+  }
+
+  .textos-horizontais {
+  margin-bottom: 20px; /* espaço abaixo dos textos */
+  }
+
+  .divbtn{text-align: center;}
+
+
+  .btn-servicos {
+      background-color: #ec73b6; /* cor rosa */
+      color: #ffffff; /* cor do texto branco */
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 40px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4 ); /* Adiciona uma sombra suave */
+      }
+    
+      .center-btn{
+        text-align: center;
+      }
+
+      .btn-sevicos :hover {
+      background-color: #ec73b6; /* cor rosa mais escura ao passar o mouse */
+      }
+
+      .paragrafo{
+        color: black;
+        font-weight: normal;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .btn-servicos2 {
+        background-color: #ec73b6; /* cor rosa */
+        color: #ffffff; /* cor do texto branco */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+        transition: background-color 0.3s ease;
+        margin-top: 30px;
+        }
+        
+        .b:hover {
+        background-color: #ec73b6; /* cor rosa mais escura ao passar o mouse */
+        }
+
+      
+        .agendar-consulta-btn, .btn-servicos {
+          transition: transform 0.3s ease;
+        }
+
+        /* Quando o cursor passa sobre o botão */
+  .agendar-consulta-btn:hover, .btn-servicos:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+  }
+
+  /* Quando o botão é clicado */
+  .agendar-consulta-btn:active, .btn-servicos:active {
+    transform: scale(0.9); /* Reduz o tamanho do botão em 10% */
+  }
+
+
+      
+
+  .agendar-consulta-btn {
+  background-color: #ec73b6; /* cor rosa */
+  color: #ffffff; /* cor do texto branco */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4 ); /* Adiciona uma sombra suave */
+  }
+
+  .agendar-consulta-btn:hover {
+  background-color:#ec73b6; /* cor rosa mais escura ao passar o mouse */
+  }
+
+
+  .texto-capa1 {
+
+    color: rgb(41, 41, 104);
+    font-size: 45px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+
+  }
+
+  .texto-capa2 {
+
+  color: rgb(41, 41, 104);
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+
+  }
+
+  .texto-capa3 {
+
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(65, 60, 60);
+
+  }
+    .quem-sou-eu {
+      background-color: #ffffff;
+      display: flex; /* utilizar flexbox para alinhar itens */
+      flex-direction: column; /* dispor os itens em coluna */
+      align-items: center; /* alinhar os itens ao centro */
+      padding: 20px;
+    }
+
+    .foto-quemsoueu {
+      width: 100%; /* ocupar toda a largura */
+      margin-bottom: 20px; /* espaçamento abaixo da foto */
+    }
+
+    .foto-quemsoueu img {
+      max-width: 100%; /* garantir que a imagem seja responsiva */
+      height: auto;
+      border-radius: 5px; /* bordas arredondadas */
+      margin-top: 80px;
+    }
+
+    .texto-quemsoueu {
+      max-width: 600px; /* largura máxima do texto */
+      margin-left: auto; /* alinhar à direita */
+      margin-right: auto; /* alinhar à esquerda */
+      color: #242323; /* cor do texto */
+      text-decoration-line: right;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: -40px;
+      align-items: center;
+    }
+
+    .textosusan{
+      text-align: left;
+    }
+
+    .nomesusan{
+      font-size: 25px;
+      color: rgb(43, 43, 97);
+      font-weight: bolder;
+    }
+
+
+    @media screen and (min-width: 1024px) {
+      body {
+  overflow-x: hidden; /* Adicione essa linha para ocultar a barra de rolagem horizontal */
+  }
+
+  .capa {
+  overflow-x: hidden; /* Adicione essa linha para ocultar a barra de rolagem horizontal na capa */
+  }
+
+  .imagem {
+  max-width: 100%; /* Remova essa linha para evitar que a imagem horizontal estique além da tela */
+  }
+
+  .topnav {
+  padding: 0 20px; /* Adicione padding à barra de navegação para compensar o espaço horizontal */
+  }
+
+  .capahorizontaldegrade1 {
+  margin-right: -20px; /* Reduza a margem direita para compensar qualquer deslocamento */
+  }
+      
+      .texto-capa1 {
+    
+  font-size: 40px !important; /* Usando !important para garantir que esta regra tenha prioridade */
+  }
+  .texto-capa2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -35px !important;
+    font-size: 18px !important;
+
+  }
+  .texto-capa3{
+    margin-top: 40px !important;
+    font-size: 40px !important;
+  }
+
+
+  .agendar-consulta-btn {
+
+  top: calc(20% + 260px) !important; /* Ajustando a distância do topo */
+
+  }
+
+  .agendar-consulta-btn:hover {
+  background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
+  }
+
+
+  .logo-topnav {
+    float: left; /* ou display: inline-block; */
+    margin-right: 200px !important; /* Ajuste a margem conforme necessário */
+  }
+  .topnav p {
+    display: inline-block; /* Mostra os parágrafos para telas maiores que 768px */
+    margin: 0 15px !important; /* Adiciona um espaço entre os parágrafos */
+  
+  }
+
+
+
+    }
+
+
+
+    @media screen and (max-width: 768px) {
+
+      
+      .foto-quemsoueu{
+        margin-top: -8px;
+      
+      }
+
+      .texto-quemsoueu{
+        margin-top: -88px;
+      }
+
+    
+      
+    }
+
+
+    @media screen and (max-width: 769px) {
+
+      .quadrado-servico{
+        height: 400px;
+      }
+
+    }
+
+    @media screen and (min-width: 768px) {
+ 
+      .logo-topnav {
+        float: left; /* ou display: inline-block; */
+        margin-right: 100px; /* Ajuste a margem conforme necessário */
+      }
+      .topnav p {
+        display: inline-block; /* Mostra os parágrafos para telas maiores que 768px */
+        margin: 0 10px; /* Adiciona um espaço entre os parágrafos */
+      }
+      
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+      .container1{
+        margin-left: 300px !important;
+      }
+
+
+      
+      .topnav {
+        background-color: #ffffff;
+        overflow: hidden;
+        height: 100px;
+        display: flex; /* Adicionado */
+        justify-content: center; /* Centralize os itens horizontalmente */
+        align-items: center; /* Adicionado */
+        padding: 20px 0; /* Adicione um pouco de preenchimento para espaçamento */
+        width: 100%; /* Define a largura da barra de navegação */
+        position: fixed; /* Fixa a barra de navegação */
+        top: 0; /* Alinha a barra de navegação ao topo */
+        left: 0; /* Alinha a barra de navegação à esquerda */
+        z-index: 1000; /* Garante que a barra de navegação esteja acima de outros elementos */
+    }
+
+
+
+    .capa {
+      padding-top: 100px; /* Adiciona um espaço no topo da página igual à altura da barra de navegação */
+  }
+
+    .topnav img {
+      max-width: 140px; /* reduzindo o tamanho da imagem */
+      float: left; /* alinhando à esquerda */
+      
+    }
+
+
+      .capa2 {
+  display: none; /* Ocultar a divisão .capa2 em telas menores */
+  }
+
+
+
+  .textos-horizontais {
+  position: absolute;
+  top: calc(20% - 64px); /* Ajustar a distância do topo responsivamente */
+  left: 20px;
+  max-width: calc(100% - 40px);
+  padding: 0 20px;
+  font-size: 30px;
+  color: rgb(47, 38, 104);
+  margin-top: 80px;
+  }
+
+      
+  .agendar-consulta-btn {
+  position: absolute; /* Posicionamento absoluto */
+  top: calc(20% + 195px); /* Ajustando a distância do topo */
+  left: calc(50% - 84px); /* Centralizando horizontalmente */
+  background-color: #ec73b6; /* Cor rosa */
+  color: #ffffff; /* Cor do texto branco */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40;
+  transition: background-color 0.3s ease;
+  z-index: 1; /* Garantir que o botão fique sobre a imagem de fundo */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4 ); /* Adiciona uma sombra suave */
+  }
+
+  .agendar-consulta-btn:hover {
+  background-color:#ec73b6; /* Cor rosa mais escura ao passar o mouse */
+  }
+
+
+        .textos-horizontais {
+      display: block; /* Torna visível em telas grandes */
+      visibility: visible; /* Torna visível em telas grandes */
+    }
+
+  .textos-verticais {
+    display: none; /* Esconde em telas grandes */
+    visibility: hidden; /* Esconde em telas grandes */
+  }
+
+  .texto-capa1 {
+    font-size: 28px;
+
+
+  }
+  .texto-capa2 {
+    
+    font-size: 18px;
+
+  }
+  .texto-capa3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+
+  }
+
+      .imagem-vertical1 {
+        display: none; /* Esconder a imagem vertical em telas maiores */
+      }
+      
+      .imagem {
+        display: block; /* Mostrar a imagem de fundo padrão em telas maiores */
+      }
+
+    .foto-quemsoueu img.vertical {
+    display: none; /* Esconder imagens verticais em telas maiores */
+  }
+
+      .nome-info {
+        margin-top: 68px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+      }
+
+      .nome1-info{
+
+      font-size: 20px;
+      color:#D8C8AB;
+      text-align: center;
+      font-size: italic;
+      margin-top: -35px;
+      }
+      
+      
+      .nome1{
+
+        font-size: 20px;
+        color:#A69546;
+        text-align: center;
+        font-size: italic;
+        margin-top: -70px;
+      }
+
+      .texto {
+        color:black; /* cor do texto */
+        margin-top: 52px;
+      }
+
+
+      .quadrados-servicos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* espaçamento uniforme entre os quadrados */
+        padding: 0 20px; /* Adicionado padding nas laterais */
+        max-width: 1100px; /* Limitar a largura para centralizar os quadrados */
+        margin: 20px auto; /* Centralizar os quadrados */
+        box-sizing: border-box; /* Incluir padding e bordas na largura total */
+      }
+
+      .quadrado-servico {
+        width: calc(25% - 20px); /* Largura dos quadrados com margens */
+        height: 320px; /* Altura dos quadrados */
+        background-color: #ffffff; /* cor de fundo dos quadrados */
+        margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
+        text-align: center; /* Centralize o texto horizontalmente */
+        background-size: cover; /* Faz com que a imagem cubra todo o espaço do quadrado */
+        background-position: center; /* Centraliza a imagem dentro do quadrado */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+        border-radius: 20px;
+
+      }
+
+
+      .quem-sou-eu {
+        flex-direction: row; /* dispor os itens em linha */
+        align-items: flex-start; /* alinhar os itens ao início */
+        padding: 0; /* remover o padding */
+      }
+
+      .foto-quemsoueu {
+        width: 45%; /* largura da foto */
+        margin-bottom: 0; /* remover o espaçamento abaixo da foto */
+        margin-right: 20px; /* espaçamento à direita */
+      }
+
+      .texto-quemsoueu {
+        width: 50%; /* largura do texto */
+        margin-left: 0; /* remover a margem à esquerda */
+        margin-right: auto; /* alinhar à direita */
+      }
+
+      @media screen and (max-width: 320px) {
+
+    
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  } 
+
+
+  .textos-horizontais {
+  margin-top: -80px; /* ou o valor desejado para ajustar */
+  }
+  }
+
+  }
+
+
+        @media screen and (max-width: 767px) {
+          body {
+            overflow-x: hidden;
+    margin: 0; /* Remover a margem padrão do corpo */
+  }
+
+  .textos-horizontais{
+    margin-top: -272px;
+  }
+
+  .texto-principal {
+  bottom: 10px; /* ajustar a distância do fundo */
+  padding: 10px;
+  }
+
+
+  .texto-capa1{
+  font-size: 20px;
+
+  }
+
+  .texto-capa2{
+  margin-top: -20px;
+  font-size: 13px;
+  }
+
+  .texto-capa3{
+    font-size: 20px;
+  }
+
+  .foto-quemsoueu img.vertical {
+  width: 100%; /* Defina a largura da imagem como 100% */
+  height: auto; /* Mantenha a proporção da imagem */
+  margin: 0; /* Remova qualquer margem */
+  margin-top: -130px;
+  }
+
+
+  .capa {
+  position: relative; /* Adicionado */
+  }
+
+  .capa2 {
+  position: absolute; /* Alterado para posição absoluta */
+  bottom:80px; /* Ajuste a distância do fundo conforme necessário */
+  left: 50%; /* Centralize horizontalmente */
+  transform: translateX(-50%); /* Centralize horizontalmente */
+  }
+
+  .imagem-vertical2 {
+  max-width: 100%; /* Definir a largura máxima da imagem vertical */
+  height: auto; /* Manter a proporção da imagem */
+  }
+
+
+  .topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 80px;
+  display: flex; /* Adicionado */
+  justify-content: space-between; /* Adicionado */
+  align-items: center; /* Adicionado */
+  }
+
+  .topnav1 {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 80px;
+    display: flex; /* Adicionado */
+    justify-content: space-between; /* Adicionado */
+    align-items: center; /* Adicionado */
+    }
+
+
+  .topnav img {
+      max-width: 120px; /* reduzindo o tamanho da imagem */
+      float: left; /* alinhando à esquerda */
+      margin-left: 5px;
+    }
+
+
+  .vert1{
+    font-size:25px;
+    color: rgb(45, 45, 83);
+    font-weight: bolder;
+  }
+
+  .vert2{
+    margin-top: -22px;
+    font-size: 19px;
+    color: rgb(45, 45, 83);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+  }
+
+  .vert3 {
+  font-size: 25px;
+  color: rgb(88, 84, 84);
+  font-weight: bold;
+  text-align: center; /* Centralize o texto */
+  width: 90%; /* Defina uma largura específica para o texto */
+  margin: 0 auto; /* Centralize horizontalmente */
+  }
+
+
+  .imagem-vertical1 {
+    display: block; /* Mostrar a imagem vertical em telas menores */
+    width: 100%; /* Definir a largura da imagem vertical como 100% da largura da tela */
+    height: auto; /* Manter a proporção da imagem */
+  }
+
+
+
+  .imagem {
+    display: none; /* Esconder a imagem de fundo padrão em telas menores */
+  }
+
+
+      .nome-info {
+        margin-top: 80px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+      }
+
+      .nome1-info{
+
+      font-size: 20px;
+      color:#D8C8AB;
+      text-align: center;
+      font-size: italic;
+      margin-top: -35px;
+      }
+
+
+
+
+
+
+
+  .foto-quemsoueu img:not(.vertical) {
+    display: none;
+  }
+
+  .foto-quemsoueu img.vertical {
+    display: block;
+  }
+
+
+
+      .quadrados-servicos {
+        display: flex;
+        flex-direction: column; /* Dispor os quadrados em coluna */
+        align-items: center; /* Centralizar os quadrados */
+        margin-top: 20px;
+      }
+
+      .quadrado-servico {
+        width: 80%; /* Largura dos quadrados */
+        height: 200px; /* Altura dos quadrados */
+        background-color: #ffffff; /* cor de fundo dos quadrados */
+        margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
+          }
+
+    
+
+
+      .foto-quemsoueu,
+      .texto-quemsoueu {
+        width: 100%; /* ocupar toda a largura */
+        margin-right: 0; /* remover margem à direita */
+
+      }
+
+      .nome {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        color:black; /* cor do texto */
+        text-align: center; /* alinhar o nome centralizado */
+        font-style: italic; 
+  }
+
+  .nome1 {
+    font-size: 20px;
+        color: #D8C8AB;
+        text-align: center;
+        font-size: italic;
+        margin-top: -65px
+  }
+
+  .lotus {
+
+  text-align: center;
+  margin-bottom: -80px;
+  }
+
+
+    }
+
+
+    /* Estilos para o botão */
+    .btn {
+      background-color: #000000;
+      color: #ffffff  ; /* cor do texto branca */
+      border: 2px solid #000000; /* borda sólida */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 30px auto; /* centralizar e aumentar o espaçamento abaixo */
+      margin-top: 55px;
+    } 
+
+    .btn:hover {
+      background-color: #fff3e0;
+      color: #ffffff; /* alterar a cor do texto ao passar o mouse */
+    }
+
+    .servicos{
+      text-align: center;
+      background-color:  #faddbd;
+      padding: 20px; /* Adicionado para espaçamento interno */
+      margin-top: -3px; /* Remover margem superior */
+    }
+
+    .titulo-servicos{
+      font-weight: bolder;
+      margin-top: 18px;
+      font-size: 30px;
+      color: rgb(47, 38, 104);
+      text-align: center;
+    }
+
+    .titulo-servicos1{
+      font-weight: bolder;
+      margin-top:78px !important; 
+      font-size: 30px;
+      color: rgb(47, 38, 104);
+      text-align: center;
+    }
+
+
+
+    .titulo-quemsoueu{
+      margin-top:85px;
+      font-size: 30px;
+      color: rgb(47, 38, 104);
+      font-weight: bolder;
+    }
+
+    .texto-servicos {
+      max-width: 600px; /* Largura máxima do texto */
+      margin: 0 auto; /* Centralizar o texto */
+    }
+    .texto-servicos1 {
+      max-width: 600px; /* Largura máxima do texto */
+      margin: 0 auto; /* Centralizar o texto */
+      text-align: left;
+    }
+
+
+    .fixed-image-link {
+      position: fixed; /* Fixar a posição */
+      bottom: 10px; /* Distância do fundo */
+      right: 10px; /* Distância da direita */
+      z-index: 9999; /* Garantir que esteja acima de outros elementos */
+      
+    }
+
+    
+
+    .whapp img {
+    width: 80px; /* Definir uma largura fixa para a imagem */
+    height: auto; /* Manter a proporção da imagem */
+  }
+
+
+
+  .apresentacao1 {
+  position: relative; /* Define o posicionamento relativo */
+  }
+
+  .texto-parte1 {
+  position: absolute; /* Define o posicionamento absoluto */
+  top: 50px; /* Ajusta a distância do topo */
+  left: 50px; /* Ajusta a distância da esquerda */
+  text-align: left; /* Alinha o texto à esquerda */
+  color: white; /* Cor do texto */
+  font-size: 24px; /* Tamanho do texto */
+  font-weight: bold; /* Peso da fonte */
+  }
+
+  /** slides depoimentos */
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+  display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+  }
+
+  .mySlides img {
+  max-width: 30%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  } 
+
+  @media only screen and (max-width: 600px) {
+
+
+    
+
+    /* efeitos do texto capa tela pequena */
+
+    .texto-capa1, .texto-capa2, .texto-capa3 {
+      opacity: 0;
+      transform: translateX(-50%);
+      animation: aparecer 1s forwards;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .texto-capa3 {
+      transform: translateX(50%);
+      animation: aparecerDireita 1s forwards;
+    }
+
+    @keyframes aparecerDireita {
+      from {
+        opacity: 0;
+        transform: translateX(50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    } 
+
+      /* efeitos do texto capa tela pequena fim */
+
+  .testimonial-img {
+  width: 100%; /* Defina o tamanho desejado para as imagens de depoimento */
+  height: auto; /* Mantenha a proporção da imagem */
+  }
+  }
+
+  .slide-img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura do contêiner */
+  }
+
+  @media screen and (min-width :320px){
+
+  
+
+  .textoa{
+    margin-right: 100px;
+    margin-left: -100px;
+  }
+
+  .textoa1{
+    margin-right: 100px;
+    margin-left: -100px;
+    width: 25px; /* Defina a largura da imagem */
+    height: auto; /* Mantenha a proporção da imagem */  
+    
+  }
+
+
+
+
+
+      .quadrados-servicos a {
+        text-decoration: none; /* Remove a decoração de link */
+      }
+
+    .quadrado-servico {
+      text-align: center; /* Centralize o texto horizontalmente */
+      background-size: cover; /* Faz com que a imagem cubra todo o espaço do quadrado */
+      background-position: center; /* Centraliza a imagem dentro do quadrado */
+      background-repeat: no-repeat; /* Evita que a imagem se repita */
+      border-radius: 20px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 320px) {  
+
+  .texto-capa1{
+  margin-top: -15x;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .texto-capa2{
+  font-size: 12px;
+  margin-top: -25px;
+  }
+
+
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  } 
+
+
+  }
+
+  @media screen and (max-width: 375px) {
+
+  .texto-capa1{
+  margin-top: -15x;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .texto-capa2{
+  font-size: 12px;
+  margin-top: -25px;
+  }
+
+
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  } 
+  }
+
+
+  @media screen and (max-width: 425px) {
+
+
+    .quadrado-servico{
+
+      height: 310px;
+    }
+
+    .foto-quemsoueu{
+
+      margin-top: -65px;
+
+    }
+
+    .texto-quemsoueu{
+      margin-top: -100px !important;
+
+    }
+
+
+    .texto-capa1{
+
+      font-size: 25px !important;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    }
+    
+    .texto-capa2{
+      font-size: 15px !important;
+    }
+
+    .texto-capa3{
+      font-size: 24px;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+  .texto-capa1{
+  margin-top: -15x;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .texto-capa2{
+  font-size: 12px;
+  margin-top: -25px;
+  }
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  } 
+
+/* Estilos para o dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  margin-top: 10px;
+  margin-left: calc(50% - 100px); /* Centraliza o dropdown */
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Mostra o dropdown quando o usuário clicar no ícone do menu */
+.show {
+  display: block;
+}
+
+
+  }

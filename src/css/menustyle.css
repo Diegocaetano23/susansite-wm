@@ -1,0 +1,44 @@
+.opcoes p {
+    font-size: 13x; /* Defina o tamanho de fonte desejado */
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilizando os links no topnav */
+.link-sem-decoracao {
+    padding: 4px; /* Espaçamento interno */
+}
+
+.link-sem-decoracao a {
+    text-decoration: none; /* Removendo decoração de texto */
+    color: #333; /* Cor dos links */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.link-sem-decoracao a:hover {
+    color: #000; /* Cor do texto ao passar o mouse */
+}
+
+.menu-icone{
+    text-align: right;
+    position: relative;
+}
+
+.menu-icone img{
+    height: 25px;
+}
+
+        /* Estilos para telas com largura de até 425px */
+        @media screen and (max-width: 425px) {
+            .menu-icone {
+                float: right; /* Alinha a imagem para a direita */
+                margin-left: 40px; /* Adiciona uma margem à direita */
+            }
+        }
+
+
+.menu{
+
+    margin-right:10px;
+    margin-left: 10px;
+}
