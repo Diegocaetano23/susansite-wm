@@ -8,31 +8,61 @@
     <style>
         /* Estilo para definir a altura da página */
         html, body {
-            width: 310px;
-            height: 209px; /* Defina a altura da página */
-            overflow: hidden; /* Oculte a barra de rolagem */
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Impede a rolagem horizontal */
+            overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+            margin: 0; /* Remove as margens padrão */
+            padding: 0; /* Remove o preenchimento padrão */
+        }
+
+        /* Estilos para telas menores */
+        @media screen and (max-width: 425px) {
+            .menu-icone {
+                text-align: left; /* Alinha a imagem para a esquerda */
+                position: absolute; /* Posiciona a imagem absolutamente */
+                top: 50%; /* Posiciona a partir do topo */
+                transform: translateY(-50%); /* Centraliza verticalmente */
+                right: 10px; /* Adiciona um pequeno afastamento do lado esquerdo */
+            }
+
+            .opcoes {
+                margin-left: 0;
+                height: 500px;
+                background-color: #ffffff;
+            }
+
+            .topnav-menu {
+                background-color: #ebebeb;
+                height: 60px;
+                position: relative; /* Adiciona posicionamento relativo para o topnav */
+            }
         }
     </style>
 </head>
 <body>
 
     <div id="menu" class="menu"> 
-
-        <div class="menu-icone">
-            <a href="./index.html"><img src="./src/css/img/menu-icone.png" alt=""></a>
+        <div class="topnav-menu">
+            <div class="menu-icone">
+                <a href="./index.html"><img src="./src/css/img/menu-icone.png" alt=""></a>
+            </div>
         </div>
-     
-     <div class="opcoes" style="margin-left: 11px;">
-        <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('quem-sou-eu')">Sobre mim</a></p>
-        <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('servicos')">Como posso te ajudar?</a></p>
-        <p class="link-sem-decoracao"><a href="./morandofora.html" target="_blank">Morar em um novo país</a></p>
-        <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('faq')">Perguntas frequentes</a></p>
-        <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('contatos')">Contatos</a></p>
-    </div>
-</div>
-
-
-
     
+        <div class="opcoes">
+            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('quem-sou-eu')">Sobre mim</a></p>--> 
+            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('servicos')">Como posso te ajudar?</a></p>-->
+            <!----><p class="link-sem-decoracao"><a href="./morandofora.html" target="_blank">Morar em um novo país</a></p>
+            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('faq')">Perguntas frequentes</a></p>-->
+            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('contatos')">Contatos</a></p>-->
+        </div>
+    </div>
+
+    <script>
+        function scrollToIndexPage() {
+            // Rola a página para o lado
+            window.scrollTo(document.body.scrollWidth, 0);
+        }
+    </script>
 </body>
 </html>
