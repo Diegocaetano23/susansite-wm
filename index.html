@@ -1,68 +1,622 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
-    <link rel="stylesheet" href="./src/css/menustyle.css">
-    <style>
-        /* Estilo para definir a altura da página */
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden; /* Impede a rolagem horizontal */
-            overflow-y: hidden; /* Oculta a barra de rolagem vertical */
-            margin: 0; /* Remove as margens padrão */
-            padding: 0; /* Remove o preenchimento padrão */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicóloga Susan Elise</title>
+  <link rel="stylesheet" href="./src/css/style.css">
 
-        /* Estilos para telas menores */
-        @media screen and (max-width: 425px) {
-            .menu-icone {
-                text-align: left; /* Alinha a imagem para a esquerda */
-                position: absolute; /* Posiciona a imagem absolutamente */
-                top: 50%; /* Posiciona a partir do topo */
-                transform: translateY(-50%); /* Centraliza verticalmente */
-                right: 10px; /* Adiciona um pequeno afastamento do lado esquerdo */
-            }
-
-            .opcoes {
-                margin-left: 0;
-                height: 500px;
-                background-color: #ffffff;
-            }
-
-            .topnav-menu {
-                background-color: #ebebeb;
-                height: 60px;
-                position: relative; /* Adiciona posicionamento relativo para o topnav */
-            }
-        }
-    </style>
 </head>
 <body>
 
-    <div id="menu" class="menu"> 
-        <div class="topnav-menu">
-            <div class="menu-icone">
-                <a href="./index.html"><img src="./src/css/img/menu-icone.png" alt=""></a>
-            </div>
-        </div>
+
+  <div class="topnav">
+    <a href="./index.html"> 
+      <img src="./src/css/img/logo work nobg.png" alt="" class="logo-topnav">
+    </a>
+    <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('quem-sou-eu')">Sobre mim</a></p>
+    <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('servicos')">Como posso te ajudar?</a></p>
+    <p class="link-sem-decoracao"><a href="./morandofora.html" target="_blank">Morar em um novo país</a></p>
+    <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('faq')">Perguntas frequentes</a></p>
+    <p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('contatos')">Contatos</a></p>
+
+    <img src="./src/css/img/menu-icone.png" alt="" class="menu-icone-btn">
+
+  </div>
+
+  
+
+  <style>
+
+@media only screen and (max-width: 425px) {
+  .menu-icone-btn {
+    display: inline-block; /* Exibir a imagem apenas em telas pequenas */
+    width: 20px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .menu-icone-btn {
+    display: none; /* Ocultar a imagem em telas maiores que 425px */
+  }
+}
+
+
+
+
+/* Adicione este código ao seu estilo CSS */
+
+#menu-container {
+  position: fixed; /* Posição fixa para que ele permaneça no lugar ao rolar a página */
+  top: 0; /* Alinha o topo do contêiner ao topo da janela do navegador */
+  right: 0; /* Alinha o contêiner ao canto direito da janela do navegador */
+  bottom: 0; /* Estende o contêiner até o final da página */
+  width: 250px; /* Largura do menu (ajuste conforme necessário) */
+  background-color: white; /* Cor de fundo do menu */
+  box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2); /* Sombra para uma aparência elevada */
+  transform: translateX(100%); /* Inicialmente, esconde o menu fora da tela */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para a animação */
+}
+
+#menu-container.show {
+  transform: translateX(0); /* Mostra o menu movendo-o para a esquerda */
+}
+
+#menu-container ul {
+  list-style: none; /* Remove marcadores de lista padrão */
+  padding: 20px; /* Adiciona espaço interno ao menu */
+  margin: 0; /* Remove margens padrão */
+}
+
+#menu-container ul li {
+  margin-bottom: 15px; /* Adiciona espaço entre os itens do menu */
+}
+
+#menu-container ul li a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: black; /* Cor do texto do link */
+}
+
+/* Adicione estilos adicionais conforme necessário */
+
+
+
+  </style>
+  <script>
+    // Função para rolar suavemente para o elemento alvo
+    function scrollToElement(elementId) {
+      var element = document.getElementById(elementId);
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Ajuste 'smooth' para controlar a velocidade
+    }
+  </script>
     
-        <div class="opcoes">
-            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('quem-sou-eu')">Sobre mim</a></p>--> 
-            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('servicos')">Como posso te ajudar?</a></p>-->
-            <!----><p class="link-sem-decoracao"><a href="./morandofora.html" target="_blank">Morar em um novo país</a></p>
-            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('faq')">Perguntas frequentes</a></p>-->
-            <!--<p class="link-sem-decoracao"><a href="javascript:void(0)" onclick="scrollToElement('contatos')">Contatos</a></p>-->
-        </div>
+
+  <div class="capa" id="topo">
+    <img class="imagem" src="./src/css/img/capahorizontaldegrade1.png" alt="">
+    <img class="imagem-vertical1" src="./src/css/img/capaverticalok3.png" alt="">
+
+
+    <div class="textos-horizontais">
+      <p class="texto-capa1">PSICÓLOGA COGNITIVO <br>COMPORTAMENTAL</p>
+      <p class="texto-capa2">CRP: 20/12613</p>
+      <p class="texto-capa3">É possível ser feliz e viver uma <br> vida com significado!</p>
+      <button class="agendar-consulta-btn" onclick="window.open('https://wa.me/5512982560443', '_blank')">Agendar Consulta</button>
+  </div>
+    </div>
+  </div>
+
+
+  <div id="quem-sou-eu" class="quem-sou-eu">
+    <div class="foto-quemsoueu">
+      <img src="./src/css/img/backsiteok.png" alt="" class="horizontal">
     </div>
 
-    <script>
-        function scrollToIndexPage() {
-            // Rola a página para o lado
-            window.scrollTo(document.body.scrollWidth, 0);
-        }
-    </script>
-</body>
+    <div class="texto-quemsoueu">        
+      <p class="titulo-quemsoueu"></p>
+      <br><br><br><br>
+      <p class="nomesusan">Olá! Sou Susan Elise,</p>
+        <p class="textosusan">
+  
+          
+          Nasci no estado de São Paulo, Brasil, e atualmente resido na Espanha. Sou psicóloga e atendo brasileiros que residem no exterior através de psicoterapia online. Meu objetivo é oferecer suporte e compreensão durante as transições de vida, <b>ajudando meus clientes a enfrentarem os desafios de adaptar-se a uma nova cultura e ambiente.</b><br><br>
+                  
+          <br> Psicóloga formada pela <b>Universidade Federal de Roraima</b>, sou <b>Pós-Graduanda em Neuropsicologia, pelo Hospital Israelita Albert Einstein</b> e possuo Formação em <b>Desenvolvimento Humano na Infância e Adolescência, pela USP, Universidade de São Paulo.</b> 
+          
+          <br><br><b>Sou apaixonada pela minha profissão e amo poder fazer a diferença na vida de meus pacientes.</b>
+   
+        <br><br> A terapia online que ofereço vai além das fronteiras geográficas, atendendo pacientes em todo o Brasil e brasileiros no exterior.     
+        Entendo que a busca por terapia muitas vezes surge diante de um sofrimento que nos paralisa, comumente fazendo com que acreditemos que não há motivos para termos esperanças sobre a possibilidade de melhoria. 
+        <br><br>Nesse sentido, a minha missão é proporcionar um espaço ético, sigiloso, humanizado,
+         acolhedor e personalizado para cada demanda e paciente. 
+         <br><br><b>Estou comprometida em guiá-lo em sua jornada de autoconhecimento, transformação emocional e fomento da sua saúde mental, com ferramentas totalmente baseadas em estudos científicos, com comprovação de suas eficácias.</b> <br>
+            <br><br><br><br><b>
+
+
+            <br><br><br><br>
+          <div class="foto-quemsoueu">
+            <img src="./src/css/img/backsiteok.png" alt="" class="vertical">
+          </div>
+    </div>
+  </div>
+
+  <div id="servicos" class="servicos">
+    <!-- Conteúdo dos serviços -->
+
+    <div class="texto-servicos1">
+
+      <p class="titulo-servicos1  ">COMO POSSO TE AJUDAR COM A PSICOTERAPIA ON-LINE? </p>
+     
+      <p class="paragrafo" style="font-family: Verdana, Geneva, Tahoma, sans-serif ;">Se você está sentindo que precisa de apoio para enfrentar desafios emocionais ou comportamentais,  encontrar o profissional certo pode fazer toda a diferença. Como psicóloga especializada em terapia cognitivo-comportamental, estou aqui para oferecer mais do que técnicas e teorias; estou aqui para proporcionar um espaço acolhedor e humanizado onde sua experiência e sentimentos são validados e tratados com a máxima empatia e respeito. <br><br>
+
+        <b>Uma Parceria Baseada na Compreensão e Respeito Mútuo</b><br><br>
+
+        Minha abordagem é centrada em você. Cada pessoa possui uma história única, e entender essa história é fundamental para ajudar de forma eficaz. Juntos, vamos explorar seus pensamentos, sentimentos e comportamentos não apenas para tratar sintomas, mas para compreender as raízes de suas preocupações. Este entendimento profundo é o primeiro passo para a mudança duradoura. <br><br>
+        
+        <b>Um Ambiente Seguro e Confortável</b><br><br>
+        
+        Sei que iniciar a terapia pode ser uma decisão difícil, e reconhecer a necessidade de ajuda já é um grande passo. Por isso, faço questão de criar um ambiente seguro e acolhedor, onde você pode se sentir livre para expressar-se sem julgamentos. Aqui, você encontrará um espaço de confiança e compreensão, onde cada sessão é uma oportunidade para crescer e aprender mais sobre si mesmo. <br><br>
+        
+        <b>Técnicas Personalizadas para Seu Crescimento</b> <br><br>
+        
+        Utilizando a terapia cognitivo-comportamental, ofereço estratégias personalizadas que são adaptadas às suas necessidades específicas. Trabalharemos para desenvolver habilidades que permitam não apenas enfrentar desafios imediatos, mas também construir recursos internos que sustentarão seu bem-estar a longo prazo. Você aprenderá técnicas para modificar pensamentos disruptivos, gerenciar emoções intensas e alterar comportamentos que não servem mais ao seu bem-estar. <br><br>
+        
+        <b>Compromisso com Seu Desenvolvimento Contínuo</b> <br><br>
+        
+        Estou comprometida em acompanhar seu progresso e adaptar nosso trabalho juntos conforme suas necessidades evoluem. Este é um processo colaborativo, e sua voz é essencial em cada etapa. Juntos, podemos transformar desafios em oportunidades de crescimento e aprendizado. <br><br>
+        
+       <b>  Dê o Primeiro Passo Hoje</b> <br><br>
+        
+        Se você está pronto para começar sua jornada em direção a uma vida mais plena e satisfatória, convido você a entrar em contato comigo. Juntos, podemos descobrir como superar os obstáculos que estão no seu caminho, utilizando uma abordagem que respeita sua individualidade e valoriza sua capacidade de mudança.</p> <br><br>
+
+      <br><br>
+      <div class="center-btn"><button class="btn-servicos" onclick="window.open('https://wa.me/5512982560443', '_blank')">Quero agendar minha consulta agora</button><br><br><br> </div>     
+       </div>
+    
+   <br><br>
+    <p class="titulo-servicos">Como posso te ajudar?</p>
+
+    <div class="quadrados-servicos">
+      
+      
+      
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+    
+          <p style="font-size: 18px;">Ansiedade</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">Uma reação natural do corpo e da mente diante de ameaças percebidas, mas quando se torna crônica e debilitante, pode distorcer a percepção da realidade e dificultar o funcionamento diário.</p1>
+          </div>
+  
+      </div>
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+        
+          <p style="font-size: 18px;">Depressão</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">Uma batalha interna que obscurece a perspectiva positiva da vida, distorcendo os pensamentos e sentimentos em um ciclo de desesperança e apatia.</p1>
+          </div>
+     
+      </div>
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+        <a href="./tdah.html">
+          <p style="font-size: 18px;">TDAH</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <a href="./tdah.html" target="_blank"><p1 class="txt">Uma condição que desafia a capacidade de regular a atenção e o comportamento, interferindo na capacidade de funcionar efetivamente nas demandas diárias.</p1></a>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+     
+          <p style="font-size: 18px;">Autoestima</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">
+              Avaliação subjetiva e geral que uma pessoa faz de si mesma, influenciando sua percepção de valor pessoal, competência e merecimento.</p1>
+          </div>
+    
+      </div>
+
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+       
+          <p style="font-size: 18px;">Disturibios emocionais</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">Desequilíbrios significativos no processamento e regulação das emoções, impactando negativamente o bem-estar e o funcionamento psicossocial.</p1>
+          </div>
+      
+      </div>
+
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+       
+          <p style="font-size: 18px;">Compulsão alimentar</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">Episódios recorrentes de ingestão excessiva e descontrolada de alimentos, frequentemente acompanhados por sentimentos de culpa e remorso.</p1>
+          </div>
+    
+      </div>
+
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+
+          <p style="font-size: 18px;">Pânico</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">Ataques repentinos e intensos de medo ou desconforto, acompanhados por sintomas físicos e emocionais intensos, como palpitações, tremores, falta de ar e medo de morrer ou perder o controle.</p1>
+          </div>
+     
+      </div>
+
+
+      <div class="quadrado-servico" style="background-image: url(./src/css/img/logoquadrado3.png);">
+        <a href="./borderline.html" target="_blank">
+          <p style="font-size: 18px;">Borderline</p>
+          <div class="txt-quad" style="padding-top: 2px;"> <!-- Adicione padding-top aqui -->
+            <p1 class="txt">Transtorno mental caracterizado por instabilidade emocional, padrões de relacionamento instáveis ​​e uma percepção distorcida de si mesmo e dos outros.</p1>
+          </div>
+        </a>
+      </div>
+
+        <style>
+
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+.quadrado-servico {
+background-image: url(./src/css/img/logoquadrado4.png) !important;
+}
+}
+
+
+          .txt-quad {
+padding-left: 12px; /* Adiciona padding à esquerda */
+padding-right: 12px; /* Adiciona padding à direita */
+}
+
+
+
+
+        </style>
+        
+     <!---->
+    </div>
+   
+  </div>
+
+  <div class="depoimentos">
+    <p class="titulo-depoimentos">Veja alguns depoimentos</p>
+
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./src/css/img/depoimento1.png" style="width:100%">
+        <div class="text">feedback 1</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./src/css/img/depoimento2.png" style="width:100%">
+        <div class="text">feedback 2</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./src/css/img/depoimento3.png" style="width:100%">
+        <div class="text">feedback 3</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+
+      <br><br><br>
+      <button class="btn-servicos" onclick="window.open('https://wa.me/5512982560443', '_blank')">Agendar Consulta</button><br><br><br>
+    </div>
+  </div>
+
+  <!-- Seu conteúdo HTML continua aqui -->
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      
+      // Define um novo temporizador
+      clearTimeout(timer); // Limpa o temporizador atual
+      timer = setTimeout(function () {
+        plusSlides(1); // Avança para o próximo slide após 9 segundos
+      }, 9000);
+    }
+
+    var timer = setTimeout(function () {
+      plusSlides(1); // Inicia o temporizador
+    }, 9000);
+  </script>
+      
+      
+<br> <br><br>
+</div>
+</div>
+
+
+<div id="faq" class="faq" style="background-color: #faddbd;">
+<div class="titulo-faq">
+<div class="titulo-servicos1">
+<p>Perguntas Frequentes</p>
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-item">
+<button class="accordion-button">Qual é a frequência e duração das sessões?<span class="arrow">&#9660;</span></button>
+<div class="accordion-content">
+  <p class="resposta" style="font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif;">No início do processo psicoterapêutico, é essencial que as sessões ocorram semanalmente. Com a evolução do paciente em suas demandas, as sessões vão sendo espaçadas (quinzenalmente, mensalmente e assim por diante, até a alta do paciente).
+    <br><br>
+    As sessões têm duração de 50 minutos.</p>
+</div>
+</div>
+<div class="accordion-item">
+<button class="accordion-button">Qual o valor da consulta<span class="arrow">&#9660;</span></button>
+<div class="accordion-content">
+  <p class="resposta" style="font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif;">O valor das sessões de psicoterapia é determinado pela complexidade e necessidades terapêuticas de cada paciente, identificadas durante a consulta inicial. Isso permite a personalização do plano de tratamento e a definição dos custos. Para mais detalhes ou agendamentos, entre em contato conosco.</p>
+</div>
+</div>
+<div class="accordion-item">
+  <button class="accordion-button">Como funciona a terapia online?<span class="arrow">&#9660;</span></button>
+  <div class="accordion-content">
+    <p class="resposta" style="font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif;">As sessões são conduzidas online por meio das plataformas Google Meet ou Zoom. A confirmação do horário é garantida mediante a confirmação do pagamento, que deve ser realizado com pelo menos 24 horas de antecedência. Isso assegura a reserva efetiva do seu horário de atendimento.</p>
+  </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-button">A Terapia Cognitivo Comportamental (TCC) é para mim?<span class="arrow">&#9660;</span></button>
+    <div class="accordion-content">
+      <p class="resposta" style="font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif;">A TCC baseia-se na ideia de que nossos pensamentos, sentimentos e comportamentos estão intrinsecamente conectados. <b>Nós, psicólogos que atuamos com  a TCC trabalhamos para ajudar  nossos pacientes a reconhecer e reestruturar padrões de pensamento negativos ou destrutivos, promovendo uma mudança duradoura no comportamento e no bem-estar emocional.</b> Essa abordagem é estruturada, focada em metas e orientada para o presente, tornando-se uma opção prática para quem busca soluções efetivas e aplicáveis no dia a dia.
+      <br><br>
+      </p>
+
+      <a href="./tcc.html"><p style="font-size: 18px; color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">Saiba mais aqui</p></a>
+    </div>
+    </div>
+</div>
+</div>
+<br><br><br><br>
+</div>
+
+
+
+<style>
+
+
+.resposta{
+
+font-weight: normal;
+font-size: 15px;  
+}
+.accordion-button{
+font-weight: bold;
+color: rgb(63, 63, 63);
+font-size: 18px;
+}
+
+.titulo-faq{
+margin-top: 20px;
+}
+
+.faq {
+padding-top: 15px; /* Adiciona espaço extra no topo da div FAQ */
+padding-bottom: 50px; /* Adiciona espaço extra na parte inferior da div FAQ */
+}
+
+.titulo-servicos1 {
+margin-top: 20px; /* Adiciona margem superior ao título "Perguntas Frequentes" */
+}
+
+.informacoes {
+margin-top: 0; /* Remova a margem superior da seção Informações */
+} 
+
+.accordion {
+max-width: 600px; /* Defina a largura máxima para o acordeão */
+margin: 0 auto; /* Centralize o acordeão */
+}
+
+.accordion-item {
+border-bottom: 1px solid #f1c9c9; /* Adicione uma linha divisória entre as perguntas */
+}
+
+.accordion-button {
+background-color: #faddbd; /* Cor de fundo para as perguntas */
+width: 100%;
+text-align: left;
+padding: 10px 40px 10px 30px; /* Adiciona espaço à esquerda */
+border: none;
+outline: none;
+cursor: pointer;
+position: relative; /* Adicione posição relativa para que possamos posicionar a seta */
+}
+
+.accordion-content {
+display: none; /* Oculte o conteúdo das respostas */
+padding: 10px 20px; /* Adiciona espaço à esquerda */
+background-color: #faddbd; /* Defina o fundo como branco */
+}
+
+.arrow {
+position: absolute; /* Posicionamento absoluto em relação ao botão */
+left: 10px; /* Posicionamento para o lado esquerdo */
+top: 50%; /* Alinhar verticalmente */
+transform: translateY(-50%); /* Ajustar verticalmente */
+transition: transform 0.3s ease; /* Adicionar transição */
+}
+
+.accordion-item.active .arrow {
+transform: translateY(-50%) rotate(180deg); /* Girar a seta para cima quando a resposta estiver aberta */
+}
+
+
+
+
+.accordion-item.active .accordion-content {
+display: block; /* Mostrar o conteúdo da resposta quando o item estiver ativo */
+}
+
+
+
+.texto-contato {
+margin-left: 10px; /* Adicione um espaço entre a imagem e o texto */
+}
+
+</style>  
+
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+var accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(function(item) {
+item.addEventListener('click', function() {
+this.classList.toggle('active'); // Alternar a classe ativa para o item clicado
+});
+});
+});
+
+
+
+</script>
+    
+
+  </div>
+
+
+  <div id="contatos" class="contatos" style="background-color: white;">
+    <br>
+    <p class="titulo-servicos">Contatos</p>
+
+  <style>
+    .container1 {
+      display: flex; /* Use flexbox para organizar os itens */
+      align-items: center; /* Alinhe os itens verticalmente */
+     margin-left: 120px;
+    }
+
+    .textoa {
+      margin-top: -1px;
+      flex: 1; /* Permita que o texto ocupe o espaço restante */
+    }
+
+ 
+
+    .espaco1{
+      margin-left: 10px;
+    }
+  </style>
+
+
+<div class="contatos">
+<div class="container1">
+
+  <img src="./src/css/img/instagram1.png" alt="Descrição da imagem" class="textoa1">
+
+  <div class="textoa">
+    <p class="link-sem-decoracao1"><a href="https://www.instagram.com/psicologa_susanelise/"target="_blank" >psicologa_susanelise</a></p>
+  </div>
+
+</div>
+<div class="contatos">
+
+  <div class="container1">
+
+    <img  src="./src/css/img/telwhapp1.png" alt="Descrição da imagem" class="textoa1">
+
+    <div class="textoa">
+      <p class="link-sem-decoracao1"><a href="https://wa.me/5512982560443"target="_blank">(12) 98256-0443</a></p>
+    </div>
+
+  </div>
+
+  <div class="container1">
+
+    <img src="./src/css/img/email1.png" alt="Descrição da imagem" class="textoa1">
+
+    <div class="textoa">
+      <p class="link-sem-decoracao1"><a href="#contatos">elisemerces@gmail.com</a></p>
+    </div>
+
+  </div>
+  <br><br><br><br><br>
+    </div>  
+</div>
+
+
+
+  <div class="informacoes">
+  <img src="./src/css/img/logo work nobg.png" alt="">
+  
+  <div class="copyright" style=" background-color: #faddbd;">
+    <p>Copyright © 2024 Psicologa Susan Elise, Todos os Direitos Reservados. Desenvolvido por Caetano Web</p>
+  </div>
+
+  </div>
+  
+
+  
+    <div class="whapp">
+    <a href="https://wa.me/5512982560443" target="_blank" class="fixed-image-link">
+      <img  src="./src/css/img/whatsapp1.png" alt="Descrição da imagem" style="width: 80px; height: auto;">
+    </a>
+  </div>
+
+
+  <!-- Adicione este código no final do seu arquivo HTML, antes da tag </body> -->
+
+<!-- Elemento para conter o menu -->
+
+<script>
+  // Seletor para o ícone do menu
+  var menuIcon = document.querySelector('.menu-icone-btn');
+
+  // Adiciona um evento de clique ao ícone do menu
+  menuIcon.addEventListener('click', function() {
+    // Redirecionar para a página 'menu.html' ao clicar no ícone do menu
+    window.location.href = './menu.html';
+  });
+
+
+
+  
+</script>
+
+
+  
+
+
+</body>   
 </html>
